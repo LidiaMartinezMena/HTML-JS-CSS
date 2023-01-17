@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> Acceso a página Web </title>
+		<script src="index.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="formulario">
+			<h1> Create Account </h1>
+			<form id="form">
+			<h3> Nombre </h3>
+			<input type="text" id="nombre" minlength="1" onblur="compruebanombre()" required>
+			<h2 id="no1" class="no" style="display: none;"> Rellene este campo </h2>
+			<h3> Email </h3>
+			<input type="email" id="email" minlength="1" value="" onblur="compruebaemail()" required>
+			<h2 id="no2" class="no" style="display: none;"> Rellene este campo </h2>
+			<h3> Clave </h3>
+			<input type="password" id="clave1" minlength="8"  onblur="compruebaclave()" required>
+			<h2 id="no3" class="no" style="display: none;"> Debe tener más de 8 caracteres </h2>
+			<h2 id="no4" class="no" style="display: none;"> Las contraseñas deben coincidir </h2>
+			<h3> Confirme su clave </h3>
+			<input type="password" id="clave2" minlength="8" onblur="compruebaclave2()" required>
+			<h2 id="no5" class="no" style="display: none;"> Debe tener más de 8 caracteres </h2>
+			<h2 id="no6" class="no" style="display: none;"> Las contraseñas deben coincidir </h2>
+			<input type="button" id="aceptar" value="ENVIAR" onclick="comprobar()">
+			</form>
+		</div>
